@@ -55,9 +55,9 @@ const { jadibot, stopjadibot, listjadibot } = require('./lib/jadibot')
 
 banChats = true
 offline = false
-targetpc = '6285751056816'
-owner = '6285751056816'
-fake = 'HEXAGONZ'
+targetpc = '6285158405074'
+owner = '6285158405074'
+fake = 'SKY-LINE'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -282,7 +282,7 @@ module.exports = hexa = async (hexa, mek) => {
         let vote = JSON.parse(fs.readFileSync(`./lib/${from}.json`))
         let _votes = JSON.parse(fs.readFileSync(`./lib/vote/${from}.json`))  
         let fil = vote.map(v => v.participant)
-        let id_vote = sender ? sender : '6285751056816@s.whatsapp.net'
+        let id_vote = sender ? sender : '6283157292861@s.whatsapp.net'
         if(fil.includes(id_vote)) {
         return mentions('@'+sender.split('@')[0]+' Anda sudah vote', fil, true)
         } else {
@@ -304,7 +304,7 @@ module.exports = hexa = async (hexa, mek) => {
         const vote = JSON.parse(fs.readFileSync(`./lib/${from}.json`))
         let _votes = JSON.parse(fs.readFileSync(`./lib/vote/${from}.json`))  
         let fil = vote.map(v => v.participant)
-        let id_vote = sender ? sender : '6285751056816@s.whatsapp.net'
+        let id_vote = sender ? sender : '6283157292861@s.whatsapp.net'
         if(fil.includes(id_vote)) {
         return mentions('@'+sender.split('@')[0]+' Anda sudah vote', fil, true)
         } else {
